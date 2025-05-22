@@ -1,0 +1,59 @@
+/* Custom styles for Web Research Assistant */
+
+/* Main container */
+.main {
+    padding: 2rem;
+}
+
+/* Headers */
+h1 {
+    color: #FF4B4B;
+    margin-bottom: 2rem;
+}
+
+h2, h3 {
+    color: #262730;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Sidebar */
+.sidebar .sidebar-content {
+    background-color: #F0F2F6;
+    padding: 1rem;
+}
+
+/* Input fields */
+.stTextInput > div > div > input {
+    border-radius: 4px;
+}
+
+/* Buttons */
+.stButton > button {
+    border-radius: 4px;
+    background-color: #FF4B4B;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+}
+
+.stButton > button:hover {
+    background-color: #E63E3E;
+}
+
+/* Download buttons */
+.stDownloadButton > button {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+/* Spinner */
+.stSpinner > div {
+    border-color: #FF4B4B;
+}
+
+/* Report text */
+.report-text {
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
