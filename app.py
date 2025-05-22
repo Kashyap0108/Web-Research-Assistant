@@ -19,7 +19,7 @@ def main():
     st.title("Web Research Assistant")
     
     # Get API keys from environment variables or Streamlit secrets
-    openai_api_key = os.getenv("OPENAI_API_KEY") or st.secrets["OPENAI_API_KEY"]
+    gemini_api_key = os.getenv("GEMINI_API_KEY") or st.secrets["GEMINI_API_KEY"]
     serpapi_key = os.getenv("SERPAPI_KEY") or st.secrets["SERPAPI_KEY"]
     
     with st.form("search_form"):
@@ -43,7 +43,7 @@ def main():
                 content = extract_content(search_results)
                 
             with st.spinner("🤖 Generating report..."):
-                report = generate_report(content, report_length, openai_api_key)
+                report = generate_report(content, report_length, gemini_api_key)
                 
             if report is None:
                 st.warning("Could not generate the report. Please try again later.")

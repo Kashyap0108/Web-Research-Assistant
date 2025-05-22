@@ -6,7 +6,7 @@ A Streamlit-based web application that helps users conduct research by automatic
 
 - Web search using Google (via SerpAPI)
 - Automatic content extraction from web pages
-- AI-powered report generation using OpenAI's GPT-3.5
+- AI-powered report generation using Google's Gemini Pro model
 - Multiple report length options (Short, Medium, Detailed)
 - Export reports as PDF or DOCX
 - Clean and intuitive user interface
@@ -29,7 +29,7 @@ pip install -r requirements.txt
 - Add your API keys:
 ```
 SERPAPI_KEY=your_serpapi_key_here
-OPENAI_API_KEY=your_openai_api_key_here
+GEMINI_API_KEY=your_gemini_api_key_here
 ```
 
 4. Run the application:
@@ -64,7 +64,7 @@ your_project_name/
 ## Dependencies
 
 - streamlit
-- openai
+- google-generativeai
 - beautifulsoup4
 - requests
 - python-docx
